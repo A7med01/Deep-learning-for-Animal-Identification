@@ -23,7 +23,7 @@ Wildlife images captured in a field represent a challenging task while classifyi
 In this challenge, you will be given 19,000 images of 30 different animal species. Given the image of the animal, your task is to predict the probability for every animal class. The animal class with the highest probability means that the image belongs to that animal class.
 
 ## Data Description:
-You’re given two types of files (CSV and Images) to download. The train data consists of 13,000 images and the test data consists of 6,000 images of 30 different species of animals. The image ID and the corresponding animal name are stored in .csv format, while the image files are sorted into separate train and test image folders. Data in the .csv file is in the following format:
+Youâ€™re given two types of files (CSV and Images) to download. The train data consists of 13,000 images and the test data consists of 6,000 images of 30 different species of animals. The image ID and the corresponding animal name are stored in .csv format, while the image files are sorted into separate train and test image folders. Data in the .csv file is in the following format:
 
 | Variable      | Description   | 
 |:-------------:|:-------------:| 
@@ -70,13 +70,13 @@ A participant has to submit a .csv file in the following format:
 ![alt text][image1]
 
 
-## My sloution: 
+## My Solution: 
 #### Steps:
 * I used Google colab so i didn't need a GPU
-* I used fast.ai library which buit on pytorch 
+* I used fast.ai library which is built on pytorch 
 * I used a pretrained model (ImageNet based model)  resnext101_64 (Deep Residual Networks)
 * I added two fully connected layers 
-* I choosed a good learning rate 
+* I chose a learning rate which is 0.01 
 * I trained only those two layers then i trained the whole network and test on validation set
 * I used data augmentation and Test Time Augmentation (TTA)
 * After achieving good accuracy I trained again the network with all training examples  (no validation set) which should give me better results
@@ -88,8 +88,6 @@ A participant has to submit a .csv file in the following format:
 #### [leaderboard](https://www.hackerearth.com/challenge/competitive/deep-learning-beginner-challenge/leaderboard/)
 
 ![alt text][image2]
-
-
 
 
 
